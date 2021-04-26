@@ -16,7 +16,7 @@ Na primeira parte, configuramos nosso projeto e criamos uma versão bem básica 
 
 > Socket.IO é um [protocolo de transporte] (<https://github.com/socketio/socket.io-protocol>) que permite a comunicação bidirecional em tempo real baseada em eventos entre clientes (normalmente, embora nem sempre, navegadores da web) e um servidor. As implementações oficiais dos componentes cliente e servidor são escritas em **JavaScript** .
 
-## Flask (<www.palletsprojects.com>)
+## Flask (www.palletsprojects.com)
 
 > Flask é uma micro estrutura da web escrita em Python. É classificado como um microframework porque não requer ferramentas ou bibliotecas particulares. Ele não tem camada de abstração de banco de dados, validação de formulário ou quaisquer outros componentes onde bibliotecas de terceiros pré-existentes fornecem funções comuns.
 
