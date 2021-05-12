@@ -1,17 +1,22 @@
 
 from flask import Flask, render_template, request
-from chatterbot import ChatBot
+from chatterbot import ChatBot, conversation
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.trainers import ListTrainer
 
 app = Flask(__name__)
 
-with open('file.txt','r') as file:
+with open('file.txt',) as file:
     conversation = file.read()
 
-bot = ChatBot("Hank Pessoa ChatBot")
+bot = ChatBot("hank")
 trainer = ListTrainer(bot)
 trainer.train(conversation)
+
+#bot = ChatBot('bot')
+trainer = ChatterBotCorpusTrainer(conversation)
+#trainer.train('file.yml')
+
 
 @app.route("/")
 def home():
