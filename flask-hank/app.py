@@ -6,7 +6,7 @@ from chatterbot.trainers import ListTrainer
 
 app = Flask(__name__)
 
-with open('file.txt',) as file:
+with open('file.yml',) as file:
     conversation = file.read()
 
 bot = ChatBot("hank")
